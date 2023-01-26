@@ -1,0 +1,22 @@
+<div class="card" style="width: 35rem;">
+  <img class="card-img-top" src="{{product.thumbnail}}" alt="Card image cap">
+  <ul class="preview-thumbnail nav nav-tabs">
+    <li *ngFor="let image of product.images;">
+      <a data-toggle="tab"><img src="{{image}}" /></a>
+    </li>
+  </ul>
+
+
+  <div class="card-body">
+    <h5 class="card-title">{{product.title}}</h5>
+    <h6 class="card-subtitle mb-2 text-muted">{{product.price}}$</h6>
+    <p class="card-text">{{product.description}}</p>
+    <a class="btn btn-primary" *ngIf="!addButton" (click)="addToCart(); addButton = true;">add to cart</a>
+    <div class="d-flex w-50" *ngIf="addButton">
+      <div class="alert alert-success" role="alert">
+        Product added
+      </div>
+
+  </div>
+
+</div>

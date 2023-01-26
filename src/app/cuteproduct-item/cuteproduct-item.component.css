@@ -1,0 +1,21 @@
+
+  .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #acace6 !important;
+}
+.card-header{
+  background-color: aliceblue;
+}
+  .card{
+    margin-bottom: 10px;
+    margin-top: 20px;
+    padding: 5px;
+
+}
+.card-img:hover{
+  transition: 0.3s ease-in-out;
+  transform: scale(1.1);
+}
+
+.card-title{
+  font-weight: bold;
+}

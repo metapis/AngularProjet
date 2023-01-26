@@ -1,0 +1,19 @@
+.card {
+  margin: 0 auto; /* Added */
+  margin-bottom: 10px; /* Added */
+  margin-top: 30px;
+}
+.preview-thumbnail.nav-tabs {
+  border: none;
+  margin-top: 15px; }
+.preview-thumbnail.nav-tabs li {
+  width: 18%;
+  margin-right: 2.5%; }
+.preview-thumbnail.nav-tabs li img {
+  max-width: 100%;
+  display: block; }
+.preview-thumbnail.nav-tabs li a {
+  padding: 0;
+  margin: 0; }
+.preview-thumbnail.nav-tabs li:last-of-type {
+  margin-right: 0; }

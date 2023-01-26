@@ -1,0 +1,6 @@
+.nav-link:hover{
+  cursor: pointer;
+}
+
+.navbar-brand{ margin-left: 10px;
+}

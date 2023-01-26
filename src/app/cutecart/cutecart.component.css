@@ -1,0 +1,18 @@
+.h-100{
+  padding: 50px;
+}
+.btn-warning{
+ margin-left: 45%;
+ background-color: #acace6;
+
+}
+img {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  margin-left: 50px;
+
+}
+.text-danger{
+  cursor:pointer;
+}

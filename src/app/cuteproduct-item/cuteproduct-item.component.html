@@ -1,0 +1,18 @@
+<div class="card" style="height: 400px; width: 340px;">
+  <img class="card-img" src="{{product.thumbnail}}" (click)="clickProduct(product.id)" alt="Card image cap" style="height: 200px; width: 100%;">
+  <div class="card-header">
+    {{product.price}}$
+  </div>
+  <div class="card-body" (click)="clickProduct(product.id)">
+    <div class="d-flex justify-content-between">
+      <h5 class="card-title">{{product.title}}</h5>
+    </div>
+    <p class="card-text" style="text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">{{product.description}}</p>
+  </div>
+  <a class="btn btn-primary" *ngIf="!addButton" (click)="addToCart(); addButton = true;">add to cart</a>
+  <div class="d-flex w-50" *ngIf="addButton">
+    <div class="alert alert-success" role="alert">
+      Product added
+    </div>
+</div>
+</div>

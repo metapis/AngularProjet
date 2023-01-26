@@ -1,0 +1,46 @@
+<div class="cartBox">
+<div class="headCart">
+  <p class="lead">You have <label class="text-danger ">{{cartDetailList.length}}</label> products in your cart</p>
+  <span class="text-danger card-header" (click)="removeAllCart()">Clear Shopping Cart</span>
+</div>
+  <table class="table table-striped">
+      <thead>
+          <tr>
+              <th></th>
+              <th>Name</th>
+              <th>Price</th>
+              <th style="width: 25%;">Quantity</th>
+              <th>Total</th>
+              <th></th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor="let elt of cartDetailList; let index = index" >
+              <td><img src="{{elt.product.thumbnail}}" alt=""></td>
+              <td>{{elt.product.title}}</td>
+              <td>{{elt.product.price}} $</td>
+              <td>
+                  <div class="quantity">
+
+                      <input class="form-control"  type="number" (change)="detectChange()" [(ngModel)]="elt.quantity" min="1">
+
+                  </div>
+              </td>
+              <td>{{elt.product.price * elt.quantity}} $</td>
+              <td>
+                  <button class="btn btn-danger" (click)="removeCartItem(elt)" >Delete</button>
+              </td>
+          </tr>
+      </tbody>
+      <tfoot>
+          <tr>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th>Total : {{grandtotal}} $</th>
+          </tr>
+      </tfoot>
+  </table>
+
+</div>
